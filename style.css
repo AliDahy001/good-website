@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Redressed&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  font-family: "Akaya Telivigala", cursive;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+header {
+  position: fixed;
+  width: 100%;
+  height: 3em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 300;
+  font-size: 20px;
+  background-color: white;
+  box-shadow: 0 -4px 20px 4px rgba(0, 0, 0, 0.337);
+  top: 0;
+  z-index: 10;
+}
+#logo {
+  display: inline-block;
+  justify-content: center;
+  position: relative;
+  height: 3em;
+  width: 29em;
+}
+#logo img {
+  transform: scale(0.15);
+  float: left;
+  margin: -158px 0 0 -277px;
+}
+#logo p {
+  color: rgb(73, 72, 65);
+  font-size: larger;
+  font-weight: 700;
+  font-style: italic;
+  float: left;
+  margin: 19px 0 0 -319px;
+  font-family: "Redressed", cursive;
+}
+#logo span {
+  color: orange;
+  font-family: inherit;
+}
+header ul {
+  list-style: none;
+  cursor: default;
+  padding: 0 0.5em;
+  margin: 1em;
+  overflow: hidden;
+}
+header a {
+  text-decoration: none;
+  cursor: pointer;
+  color: rgb(73, 72, 65);
+}
+header li {
+  display: inline-block;
+  padding: 10px;
+  transition: font-weight 100ms ease;
+}
+header li:hover {
+  font-weight: 400;
+  text-decoration: underline solid orange 3px;
+  text-underline-offset: 10px;
+}
+#enroll {
+  color: white;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+  margin: 0rem auto;
+  background-image: url(https://media.istockphoto.com/photos/violin-on-gray-background-picture-id1150777805);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  z-index: 3;
+}
+#enroll form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  gap: 1.25rem;
+}
+#enroll form [type="email"] {
+  width: 20rem;
+  height: 2rem;
+  font-size: 1em;
+  padding-left: 4px;
+}
+#enroll form button {
+  border: none;
+  background-color: orange;
+  height: 1.8rem;
+  width: 16rem;
+  font-weight: 700;
+  font-size: 14px;
+  color: rgb(242, 242, 242);
+  place-self: center;
+  line-height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#enroll form button:hover {
+  outline: white 1px solid;
+  outline-offset: 2px;
+  color: white;
+}
+#stlocal {
+  content: "";
+  width: 1px;
+  height: 1px;
+  background-color: transparent;
+  position: absolute;
+  margin-top: -3.8rem;
+}
+#features {
+  width: 100%;
+  height: fit-content;
+  background-color: orange;
+  position: relative;
+  display: grid;
+  grid-template-areas:
+    "flame text1 text1 text1"
+    "truck text2 text2 text2"
+    "battery text3 text3 text3";
+  gap: 30px;
+  padding: 15vh 20vw;
+  column-gap: 70px;
+  box-shadow: 0 0 10px 2px black;
+  z-index: 4;
+}
+#flame {
+  grid-area: flame;
+  width: 90px;
+}
+#flame-text {
+  grid-area: text1;
+  padding-top: 1rem;
+  line-height: inherit;
+}
+#truck {
+  grid-area: truck;
+  width: 100px;
+  margin-left: -0.75rem;
+}
+#truck-text {
+  grid-area: text2;
+  padding-top: 0.5rem;
+  line-height: inherit;
+}
+#battery {
+  grid-area: battery;
+  width: 100px;
+  height: 100px;
+  margin-left: -11px;
+  margin-left: -20px;
+}
+#battery-text {
+  grid-area: text3;
+  padding-top: 1rem;
+  line-height: inherit;
+}
+#features img {
+  padding-left: 10px;
+  margin-right: -50px;
+}
+#flame-text,
+#truck-text,
+#battery-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: -10px;
+  padding-left: 10px;
+}
+#hiw {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60vh;
+}
+#iwood {
+  width: 100%;
+  height: fit-content;
+  background-image: url(https://www.hdimages.pics/images/quotes/english/general/wooden-background-hd-image-52650-308037.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+  padding: 10vh 5vw;
+  gap: 5vh;
+}
+#ndlocal {
+  content: "";
+  width: 1px;
+  height: 1px;
+  background-color: transparent;
+  position: absolute;
+  margin-top: -75rem;
+}
+#describtion {
+  text-align: center;
+  color: white;
+  line-height: 3vh;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 0 5vw;
+}
+iframe {
+  width: 60%;
+  height: 50vh;
+}
+#box-holder {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 4vw;
+  padding-top: 10vh;
+}
+.box {
+  width: 20rem;
+  height: 85vh;
+  background-color: orange;
+  border: 3px solid white;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5vh 2vw 10vh;
+  gap: 5vh;
+  box-shadow: 4px 2px 20px 2px black;
+}
+#pricing {
+  content: "";
+  background-color: transparent;
+  float: left;
+  width: 1px;
+  height: 1px;
+  margin-top: -44rem;
+}
+footer {
+  width: 100%;
+  height: 5vh;
+  background-color: rgb(31, 31, 31);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 1.5vh 6vw;
+}
+footer :first-child {
+  word-spacing: 2vw;
+}
